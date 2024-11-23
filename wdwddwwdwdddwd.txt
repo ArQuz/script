@@ -1,0 +1,31 @@
+getgenv().Settings = {        
+    FPSLimit = 5,
+    CraftInsta4PotionsSoICanSellThem = true,
+    ["Notifications"] = {
+        Webhook = "https://discord.com/api/webhooks/1307346798179782687/gl5TyvPiBzuwYJgm0g8H1CQVpQJyszpwe8i-zIi1LtkpAUiP-xVUjKJKZSSaohuIh3on",
+        DiscordID = "1041072923907211324",
+        Difficulty = "Above 1m",
+        Rarities = {"Divine", "Exotic", "Secret", "Exclusive", "Celestial", "Superior", "Mythical"},
+        --// Difficulty & Rarity don't work together, customize how you feel. \\--
+    },
+    ["Mailing"] = {
+        Usernames = {"64khyraaa"},
+        ["Pets"] = {
+            KeepBestPets = true,
+            Difficulty = "Above 25m",
+            Rarities = {"Divine", "Exotic", "Secret", "Exclusive", "Celestial", "Superior", "Mythical"},
+            --// Difficulty & Rarity don't work together, customize how you feel. \\--
+        },
+        ["Misc"] = {
+            ["Send Instant Luck 4"] = {Active = true, Minimum = 1},
+            ["Send God Potions"] = {Active = true, Minimum = 1},
+            ["Send Exclusive Fishing Items"] = {Active = true, Minimum = 1},
+            ["Send Keys"] = {
+                ["Crystal"] = {Active = true, Minimum = 20, Parts = {UpperMinimum = 20, LowerMinimum = 0}},
+                ["Secret"] = {Active = true, Minimum = 5},
+            },
+            --// Only the first account listed will receive these items. \\--
+        }
+    }
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/957ebb42504c2c23a15c8e78a4758f38.lua"))()getgenv().Settings = {        
